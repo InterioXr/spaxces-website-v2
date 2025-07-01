@@ -39,9 +39,12 @@ const Index = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">What is Spaxces?</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Spaxces is the next generation platform that bridges the gap between physical and digital real estate experiences.
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+              Spaxces is a Mixed Reality Design & eCommerce platform that bridges the gap between physical and digital home decor experiences.
             </p>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 elevation-2">
+              Launch Spaxces
+            </button>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
