@@ -41,7 +41,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 bg-white/90 backdrop-blur-md rounded-3xl p-4 border border-slate-200/60 shadow-lg">
+    <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 bg-slate-800/90 backdrop-blur-md rounded-3xl p-4 border border-slate-700/60 shadow-lg">
       <div className="flex flex-col space-y-3">
         {navItems.map(({ id, label, icon: Icon }) => (
           <button
@@ -50,7 +50,7 @@ const Navigation = () => {
             className={`group relative flex items-center justify-center p-4 rounded-2xl transition-all duration-200 ${
               activeSection === id
                 ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
-                : 'text-slate-600 hover:text-blue-600 hover:bg-blue-50'
+                : 'text-slate-400 hover:text-blue-400 hover:bg-slate-700/50'
             }`}
             title={label}
           >
