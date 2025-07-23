@@ -10,20 +10,20 @@ const Index = () => {
       <Navigation />
       
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-700/20" />
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
           {/* Logo */}
           <div className="relative mb-8 flex justify-center">
             <div className="relative">
               <img 
-                src="/lovable-uploads/c34558e7-4c7b-40ed-9d31-7cef52646aa5.png" 
+                src="/lovable-uploads/cbbc414d-f2aa-4f17-b850-58f842bc5ca5.png" 
                 alt="Spaxces Logo" 
                 className="w-48 h-48 object-contain relative z-10"
               />
               {/* Glassmorphism blur overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80 backdrop-blur-sm rounded-3xl" />
-              <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/10 via-transparent to-blue-700/10 blur-xl rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 backdrop-blur-sm rounded-3xl" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-transparent to-blue-700/20 blur-xl rounded-full" />
             </div>
           </div>
           
