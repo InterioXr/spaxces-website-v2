@@ -13,6 +13,20 @@ const Index = () => {
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-700/20" />
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
+          {/* Logo */}
+          <div className="relative mb-8 flex justify-center">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/c34558e7-4c7b-40ed-9d31-7cef52646aa5.png" 
+                alt="Spaxces Logo" 
+                className="w-48 h-48 object-contain relative z-10"
+              />
+              {/* Glassmorphism blur overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80 backdrop-blur-sm rounded-3xl" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/10 via-transparent to-blue-700/10 blur-xl rounded-full" />
+            </div>
+          </div>
+          
           <h1 className="text-6xl md:text-8xl font-medium text-white mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent">
             SPAXCES
           </h1>
