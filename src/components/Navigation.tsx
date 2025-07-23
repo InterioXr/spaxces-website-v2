@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from 'react';
-import { Home, Building2, Users, Mail } from 'lucide-react';
+import { Home, Building2, Users, Mail, FolderOpen, BookOpen } from 'lucide-react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
+    { id: 'projects', label: 'Our Projects', icon: FolderOpen },
+    { id: 'instructions', label: 'Instructions', icon: BookOpen },
     { id: 'spaxces', label: 'Spaxces', icon: Building2 },
     { id: 'collaborate', label: 'Collaborate', icon: Users },
     { id: 'contact', label: 'Contact', icon: Mail },
