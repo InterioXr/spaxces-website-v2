@@ -6,11 +6,18 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      {/* Global animated background elements */}
+      <div className="fixed top-20 left-20 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse z-0" />
+      <div className="fixed bottom-20 right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000 z-0" />
+      <div className="fixed top-1/3 right-1/4 w-24 h-24 bg-blue-600/15 rounded-full blur-lg animate-pulse delay-500 z-0" />
+      <div className="fixed top-2/3 left-1/3 w-28 h-28 bg-blue-300/15 rounded-full blur-xl animate-pulse delay-700 z-0" />
+      <div className="fixed bottom-1/3 left-10 w-36 h-36 bg-blue-700/15 rounded-full blur-xl animate-pulse delay-300 z-0" />
+      
       <Navigation />
       
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pl-20 md:pl-6">
+      <section id="home" className="min-h-screen flex items-center justify-center relative bg-black pl-20 md:pl-6">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
           {/* Logo */}
@@ -41,16 +48,11 @@ const Index = () => {
             Explore the Future
           </button>
         </div>
-        
-        {/* Material 3 floating elements */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000" />
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-600/15 rounded-full blur-lg animate-pulse delay-500" />
       </section>
 
       {/* What is Spaxces Section */}
-      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50 pl-20 md:pl-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
+      <section id="spaxces" className="min-h-screen py-20 relative bg-black pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">What is Spaxces?</h2>
@@ -132,8 +134,8 @@ const Index = () => {
       </section>
 
       {/* Instructions Section */}
-      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
+      <section id="instructions" className="min-h-screen py-20 relative bg-black pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">How to Use Spaxces</h2>
@@ -194,8 +196,8 @@ const Index = () => {
       </section>
 
       {/* Our Projects Section */}
-      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30 pl-20 md:pl-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
+      <section id="projects" className="min-h-screen py-20 relative bg-black pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Our Projects</h2>
@@ -266,7 +268,8 @@ const Index = () => {
       </section>
 
       {/* Collaborate Section */}
-      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50 pl-20 md:pl-6">
+      <section id="collaborate" className="min-h-screen py-20 relative bg-black pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Collaborate with Us</h2>
@@ -315,8 +318,8 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
+      <section id="contact" className="min-h-screen py-20 relative bg-black pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Get in Touch</h2>
@@ -394,8 +397,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-900/80 border-t border-slate-700/60">
-        <div className="container mx-auto px-6 text-center">
+      <footer className="py-8 bg-black border-t border-slate-700/60 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
+        <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-slate-400">
             © 2024 Spaxces. Transforming real estate through mixed reality technology.
           </p>
