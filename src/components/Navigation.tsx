@@ -7,9 +7,9 @@ const Navigation = () => {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'projects', label: 'Our Projects', icon: FolderOpen },
-    { id: 'instructions', label: 'Instructions', icon: BookOpen },
     { id: 'spaxces', label: 'Spaxces', icon: Building2 },
+    { id: 'instructions', label: 'Instructions', icon: BookOpen },
+    { id: 'projects', label: 'Our Projects', icon: FolderOpen },
     { id: 'collaborate', label: 'Collaborate', icon: Users },
     { id: 'contact', label: 'Contact', icon: Mail },
   ];

@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+    <div className="min-h-screen bg-black text-white">
       <Navigation />
       
       {/* Home Section */}
@@ -308,7 +308,7 @@ const Index = () => {
 
           <div className="text-center">
             <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
-              Join Our Network
+              Collaborate With Us
             </button>
           </div>
         </div>
