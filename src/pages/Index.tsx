@@ -10,7 +10,7 @@ const Index = () => {
       <Navigation />
       
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pl-20 md:pl-6">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
           {/* Logo */}
@@ -48,142 +48,8 @@ const Index = () => {
         <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-600/15 rounded-full blur-lg animate-pulse delay-500" />
       </section>
 
-      {/* Our Projects Section */}
-      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">Our Projects</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Explore our innovative mixed reality projects that are transforming home design experiences.
-            </p>
-          </div>
-
-          <Carousel className="w-full max-w-6xl mx-auto">
-            <CarouselContent className="-ml-6">
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Eye size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">VirtualSpace Living</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Interactive 3D home tours with real-time furniture placement and lighting adjustments.</p>
-                    <span className="text-blue-400 text-sm font-medium">Completed • 2024</span>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Palette size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">AR Design Studio</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Augmented reality app for visualizing home decor changes before purchase.</p>
-                    <span className="text-blue-400 text-sm font-medium">In Progress • 2024</span>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <ShoppingCart size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">MR Marketplace</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Mixed reality eCommerce platform for immersive home design shopping.</p>
-                    <span className="text-blue-400 text-sm font-medium">Completed • 2023</span>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Globe size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">Global Connect</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Cross-platform collaboration tools for international design teams.</p>
-                    <span className="text-blue-400 text-sm font-medium">Planning • 2024</span>
-                  </div>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
-            <CarouselNext className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
-          </Carousel>
-        </div>
-      </section>
-
-      {/* Instructions Section */}
-      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">How to Use Spaxces</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Follow these simple steps to transform your home design experience with mixed reality.
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                1
-              </div>
-              <div>
-                <h3 className="text-xl font-medium text-white mb-3">Download & Setup</h3>
-                <p className="text-slate-300 leading-relaxed">Download the Spaxces app and create your account. Ensure your device supports mixed reality features for the best experience.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                2
-              </div>
-              <div>
-                <h3 className="text-xl font-medium text-white mb-3">Scan Your Space</h3>
-                <p className="text-slate-300 leading-relaxed">Use your device's camera to scan and map your room. Our AI will create a 3D model of your space for accurate furniture placement.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                3
-              </div>
-              <div>
-                <h3 className="text-xl font-medium text-white mb-3">Browse & Place</h3>
-                <p className="text-slate-300 leading-relaxed">Explore our catalog of furniture and decor items. Place them virtually in your space to see how they look and fit.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                4
-              </div>
-              <div>
-                <h3 className="text-xl font-medium text-white mb-3">Purchase & Enjoy</h3>
-                <p className="text-slate-300 leading-relaxed">Once satisfied with your design, purchase the items directly through our platform and enjoy your newly designed space.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 inline-flex items-center space-x-2">
-              <span>Get Started</span>
-              <ArrowRight size={20} />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Spaxces Section */}
-      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50">
+      {/* What is Spaxces Section */}
+      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50 pl-20 md:pl-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -265,8 +131,142 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Instructions Section */}
+      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-medium text-white mb-6">How to Use Spaxces</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Follow these simple steps to transform your home design experience with mixed reality.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                1
+              </div>
+              <div>
+                <h3 className="text-xl font-medium text-white mb-3">Launch & Setup</h3>
+                <p className="text-slate-300 leading-relaxed">Launch the Spaxces app and create your account. Ensure your device supports mixed reality features for the best experience.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                2
+              </div>
+              <div>
+                <h3 className="text-xl font-medium text-white mb-3">Scan Your Space</h3>
+                <p className="text-slate-300 leading-relaxed">Use your device's camera to scan and map your room. Our AI will create a 3D model of your space for accurate furniture placement.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                3
+              </div>
+              <div>
+                <h3 className="text-xl font-medium text-white mb-3">Explore & Navigate</h3>
+                <p className="text-slate-300 leading-relaxed">Explore our catalog of furniture and decor items. Navigate through virtual spaces to see how they look and fit.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                4
+              </div>
+              <div>
+                <h3 className="text-xl font-medium text-white mb-3">Purchase & Enjoy</h3>
+                <p className="text-slate-300 leading-relaxed">Once satisfied with your design, purchase the items directly through our platform and enjoy your newly designed space.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 inline-flex items-center space-x-2">
+              <span>Get Started</span>
+              <ArrowRight size={20} />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Projects Section */}
+      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30 pl-20 md:pl-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-medium text-white mb-6">Our Projects</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Explore our innovative mixed reality projects that are transforming home design experiences.
+            </p>
+          </div>
+
+          <Carousel className="w-full max-w-6xl mx-auto">
+            <CarouselContent className="-ml-6">
+              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
+                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative z-10">
+                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
+                      <Eye size={48} className="text-blue-400" />
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-4">VirtualSpace Living</h3>
+                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Interactive 3D home tours with real-time furniture placement and lighting adjustments.</p>
+                    <span className="text-blue-400 text-sm font-medium">Completed • 2024</span>
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
+                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative z-10">
+                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
+                      <Palette size={48} className="text-blue-400" />
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-4">AR Design Studio</h3>
+                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Augmented reality app for visualizing home decor changes before purchase.</p>
+                    <span className="text-blue-400 text-sm font-medium">In Progress • 2024</span>
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
+                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative z-10">
+                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
+                      <ShoppingCart size={48} className="text-blue-400" />
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-4">MR Marketplace</h3>
+                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Mixed reality eCommerce platform for immersive home design shopping.</p>
+                    <span className="text-blue-400 text-sm font-medium">Completed • 2023</span>
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
+                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative z-10">
+                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
+                      <Globe size={48} className="text-blue-400" />
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-4">Global Connect</h3>
+                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Cross-platform collaboration tools for international design teams.</p>
+                    <span className="text-blue-400 text-sm font-medium">Planning • 2024</span>
+                  </div>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
+            <CarouselNext className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
+          </Carousel>
+        </div>
+      </section>
+
       {/* Collaborate Section */}
-      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50">
+      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50 pl-20 md:pl-6">
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Collaborate with Us</h2>
@@ -315,7 +315,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30">
+      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -333,7 +333,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
-                  <p className="text-slate-300">hello@spaxces.com</p>
+                  <p className="text-slate-300">spaxces@interioxr.com</p>
                 </div>
               </div>
               
@@ -342,8 +342,8 @@ const Index = () => {
                   <Phone className="text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-white">Phone</h3>
-                  <p className="text-slate-300">+1 (555) 123-SPAX</p>
+                  <h3 className="text-lg font-medium text-white">WhatsApp</h3>
+                  <p className="text-slate-300">+91 8826144224</p>
                 </div>
               </div>
               
@@ -352,8 +352,8 @@ const Index = () => {
                   <MapPin className="text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-white">Location</h3>
-                  <p className="text-slate-300">San Francisco, CA</p>
+                  <h3 className="text-lg font-medium text-white">Our Offices</h3>
+                  <p className="text-slate-300">Delhi/NCR, Sydney, London</p>
                 </div>
               </div>
             </div>
