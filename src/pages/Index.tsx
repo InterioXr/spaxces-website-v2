@@ -1,5 +1,5 @@
 
-import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, ArrowRight, CheckCircle } from 'lucide-react';
+import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import FeatureCard from '@/components/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -26,6 +26,14 @@ const Index = () => {
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-transparent to-blue-700/20 blur-xl rounded-full" />
             </div>
           </div>
+          
+          <p className="text-blue-300 mb-2 text-lg font-medium">
+            Early Access - awaiting full launch soon.
+          </p>
+          <p className="text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
+            Read about us here
+            <ExternalLink size={16} />
+          </p>
           
           <h1 className="text-6xl md:text-8xl font-medium text-white mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent">
             SPAXCES
