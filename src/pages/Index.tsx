@@ -61,9 +61,6 @@ const Index = () => {
             <ExternalLink size={16} />
           </p>
           
-          <h1 className="text-6xl md:text-8xl font-medium text-white mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent">
-            SPAXCES
-          </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             Regenerating Scattered Realities
           </p>
