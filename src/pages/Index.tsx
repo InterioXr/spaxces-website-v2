@@ -1,4 +1,3 @@
-
 import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import FeatureCard from '@/components/FeatureCard';
@@ -16,10 +15,8 @@ import realEstateAgent from '@/assets/real-estate-agent.jpg';
 import interiorDesignWorkspace from '@/assets/interior-design-workspace.jpg';
 import techIntegration from '@/assets/tech-integration.jpg';
 import globalNetwork from '@/assets/global-network.jpg';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-black text-white">
+  return <div className="min-h-screen bg-black text-white">
       <Navigation />
       
       {/* Top Left External Link Buttons */}
@@ -49,11 +46,7 @@ const Index = () => {
           {/* Logo */}
           <div className="relative mb-8 flex justify-center">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/cbbc414d-f2aa-4f17-b850-58f842bc5ca5.png" 
-                alt="Spaxces Logo" 
-                className="w-48 h-48 object-contain relative z-10"
-              />
+              <img src="/lovable-uploads/cbbc414d-f2aa-4f17-b850-58f842bc5ca5.png" alt="Spaxces Logo" className="w-48 h-48 object-contain relative z-10" />
               {/* Glassmorphism blur overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 backdrop-blur-sm rounded-3xl" />
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-transparent to-blue-700/20 blur-xl rounded-full" />
@@ -106,14 +99,11 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${vrHomeTour})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${vrHomeTour})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -126,14 +116,11 @@ const Index = () => {
             
             <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${vanityLamp})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${vanityLamp})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -146,14 +133,11 @@ const Index = () => {
             
             <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${ecommerceTablet})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${ecommerceTablet})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -183,7 +167,7 @@ const Index = () => {
                   <div className="p-2 bg-blue-600/20 rounded-xl">
                     <Globe size={20} />
                   </div>
-                  <span className="font-medium">Global Access</span>
+                  <span className="font-medium">ObjPanning & Zooming</span>
                 </div>
               </div>
             </div>
@@ -213,14 +197,11 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${appLaunch})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${appLaunch})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 1
               </div>
@@ -232,14 +213,11 @@ const Index = () => {
 
             <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${roomScan})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${roomScan})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 2
               </div>
@@ -251,14 +229,11 @@ const Index = () => {
 
             <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${arNavigation})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${arNavigation})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 3
               </div>
@@ -270,14 +245,11 @@ const Index = () => {
 
             <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${purchaseDelivery})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${purchaseDelivery})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 4
               </div>
@@ -382,14 +354,11 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${realEstateAgent})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${realEstateAgent})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Users2 className="text-blue-400" size={32} />
               </div>
@@ -398,14 +367,11 @@ const Index = () => {
             </div>
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${interiorDesignWorkspace})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${interiorDesignWorkspace})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Palette className="text-blue-400" size={32} />
               </div>
@@ -414,14 +380,11 @@ const Index = () => {
             </div>
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${techIntegration})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${techIntegration})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Zap className="text-blue-400" size={32} />
               </div>
@@ -430,14 +393,11 @@ const Index = () => {
             </div>
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
-              <div 
-                className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${globalNetwork})`,
-                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
-                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
-                }}
-              />
+              <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
+              backgroundImage: `url(${globalNetwork})`,
+              maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
+              WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
+            }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Globe className="text-blue-400" size={32} />
               </div>
@@ -501,30 +461,15 @@ const Index = () => {
             <div className="bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/60 shadow-lg">
               <form className="space-y-6">
                 <div>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200"
-                  />
+                  <input type="text" placeholder="Your Name" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200" />
                 </div>
                 <div>
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200"
-                  />
+                  <input type="email" placeholder="Your Email" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200" />
                 </div>
                 <div>
-                  <textarea
-                    rows={4}
-                    placeholder="Your Message"
-                    className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200 resize-none"
-                  />
+                  <textarea rows={4} placeholder="Your Message" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200 resize-none" />
                 </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-2xl font-medium transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-blue-500/25"
-                >
+                <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-2xl font-medium transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-blue-500/25">
                   Send Message
                 </button>
               </form>
@@ -541,8 +486,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
