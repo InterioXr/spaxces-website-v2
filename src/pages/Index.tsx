@@ -72,7 +72,7 @@ const Index = () => {
             innovative home decor solutions, and cutting-edge eCommerce platforms.
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 elevation-2">
-            Explore the Future
+            Explore Spaxces
           </button>
         </div>
         
