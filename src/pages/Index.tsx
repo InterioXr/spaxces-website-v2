@@ -164,7 +164,7 @@ const Index = () => {
                   <div className="p-2 bg-blue-600/20 rounded-xl">
                     <Globe size={20} />
                   </div>
-                  <span className="font-medium">ObjPanning & Zooming</span>
+                  <span className="font-medium">Panning & Zooming</span>
                 </div>
               </div>
             </div>
