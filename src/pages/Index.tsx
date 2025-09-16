@@ -484,8 +484,9 @@ const Index = () => {
           <p className="text-slate-400">
             © 2022-2025 Spaxces - Product of InterioXr Labs. Transforming real estate through mixed reality technology.
           </p>
-          <p className="text-slate-400 mt-2">
-            Contact: info@interioxr.com
+          <p className="text-slate-400 mt-2 flex items-center justify-center gap-2">
+            <Mail size={16} />
+            info@interioxr.com
           </p>
         </div>
       </footer>
