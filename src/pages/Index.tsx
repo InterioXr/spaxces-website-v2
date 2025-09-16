@@ -46,7 +46,7 @@ const Index = () => {
           {/* Logo */}
           <div className="relative mb-8 flex justify-center">
             <div className="relative">
-              <img src="/Spaxces_Logo_v1_1.png" alt="Spaxces Logo" className="w-48 h-48 object-contain relative z-10" />
+              <img src="/Spaxces_Logo_v1_1.png" alt="Spaxces Logo" className="w-72 h-72 object-contain relative z-10" />
               {/* Glassmorphism blur overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 backdrop-blur-sm rounded-3xl" />
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-600/20 via-transparent to-blue-700/20 blur-xl rounded-full" />
