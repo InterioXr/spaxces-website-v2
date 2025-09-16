@@ -9,6 +9,18 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <Navigation />
       
+      {/* Top Left External Link Buttons */}
+      <div className="fixed top-4 left-4 z-50 flex flex-col space-y-2">
+        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+          eBb Platforms
+          <ExternalLink size={14} />
+        </button>
+        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+          InterioXr Labs
+          <ExternalLink size={14} />
+        </button>
+      </div>
+      
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pl-20 md:pl-6">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
