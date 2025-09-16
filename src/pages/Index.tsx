@@ -64,7 +64,7 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             Regenerating Scattered Realities
           </p>
-          <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto font-normal">
+          <p className="text-lg text-slate-300 mb-6 max-w-2xl mx-auto font-normal">
             Experience the future of Home Design exploration through immersive virtual tours, 
             innovative home decor solutions, and cutting-edge eCommerce platforms.
           </p>
