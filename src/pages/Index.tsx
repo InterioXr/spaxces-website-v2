@@ -482,7 +482,10 @@ const Index = () => {
       <footer className="py-8 bg-slate-900/80 border-t border-slate-700/60">
         <div className="container mx-auto px-6 text-center">
           <p className="text-slate-400">
-            © 2024 Spaxces. Transforming real estate through mixed reality technology.
+            © 2022-2025 Spaxces - Product of InterioXr Labs. Transforming real estate through mixed reality technology.
+          </p>
+          <p className="text-slate-400 mt-2">
+            Contact: info@interioxr.com
           </p>
         </div>
       </footer>
