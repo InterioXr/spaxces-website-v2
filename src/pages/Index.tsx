@@ -4,6 +4,19 @@ import Navigation from '@/components/Navigation';
 import FeatureCard from '@/components/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
+// Import background images
+import vrHomeTour from '@/assets/vr-home-tour.jpg';
+import vanityLamp from '@/assets/vanity-lamp.jpg';
+import ecommerceTablet from '@/assets/ecommerce-tablet.jpg';
+import appLaunch from '@/assets/app-launch.jpg';
+import roomScan from '@/assets/room-scan.jpg';
+import arNavigation from '@/assets/ar-navigation.jpg';
+import purchaseDelivery from '@/assets/purchase-delivery.jpg';
+import realEstateAgent from '@/assets/real-estate-agent.jpg';
+import interiorDesignWorkspace from '@/assets/interior-design-workspace.jpg';
+import techIntegration from '@/assets/tech-integration.jpg';
+import globalNetwork from '@/assets/global-network.jpg';
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -83,7 +96,16 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02]">
+            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${vrHomeTour})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -94,7 +116,16 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02]">
+            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${vanityLamp})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -105,7 +136,16 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02]">
+            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${ecommerceTablet})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
@@ -163,41 +203,77 @@ const Index = () => {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${appLaunch})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 1
               </div>
-              <div>
+              <div className="relative z-10">
                 <h3 className="text-xl font-medium text-white mb-3">Launch & Setup</h3>
                 <p className="text-slate-300 leading-relaxed">Launch the Spaxces app and create your account. Ensure your device supports mixed reality features for the best experience.</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${roomScan})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 2
               </div>
-              <div>
+              <div className="relative z-10">
                 <h3 className="text-xl font-medium text-white mb-3">Scan Your Space</h3>
                 <p className="text-slate-300 leading-relaxed">Use your device's camera to scan and map your room. Our AI will create a 3D model of your space for accurate furniture placement.</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${arNavigation})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 3
               </div>
-              <div>
+              <div className="relative z-10">
                 <h3 className="text-xl font-medium text-white mb-3">Explore & Navigate</h3>
                 <p className="text-slate-300 leading-relaxed">Explore our catalog of furniture and decor items. Navigate through virtual spaces to see how they look and fit.</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60">
-              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-32 h-32 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${purchaseDelivery})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                 4
               </div>
-              <div>
+              <div className="relative z-10">
                 <h3 className="text-xl font-medium text-white mb-3">Purchase & Enjoy</h3>
                 <p className="text-slate-300 leading-relaxed">Once satisfied with your design, purchase the items directly through our platform and enjoy your newly designed space.</p>
               </div>
@@ -296,33 +372,69 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
-              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6">
+            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-24 h-24 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${realEstateAgent})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Users2 className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3">Real Estate Agents</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">Enhance your listings with immersive experiences</p>
+              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Real Estate Agents</h3>
+              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Enhance your listings with immersive experiences</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
-              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6">
+            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-24 h-24 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${interiorDesignWorkspace})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Palette className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3">Interior Designers</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">Showcase your designs in virtual environments</p>
+              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Interior Designers</h3>
+              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Showcase your designs in virtual environments</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
-              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6">
+            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-24 h-24 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${techIntegration})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Zap className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3">Tech Partners</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">Integrate with our API and expand our platform</p>
+              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Tech Partners</h3>
+              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Integrate with our API and expand our platform</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300">
-              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6">
+            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+              {/* Background image with fade effect */}
+              <div 
+                className="absolute top-0 right-0 w-24 h-24 opacity-30 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${globalNetwork})`,
+                  maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)',
+                  WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 70%)'
+                }}
+              />
+              <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Globe className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3">Global Network</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">Connect with professionals worldwide</p>
+              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Global Network</h3>
+              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Connect with professionals worldwide</p>
             </div>
           </div>
 
