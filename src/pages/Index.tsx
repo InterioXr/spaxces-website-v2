@@ -158,7 +158,7 @@ const Index = () => {
                   <div className="p-2 bg-blue-600/20 rounded-xl">
                     <Zap size={20} />
                   </div>
-                  <span className="font-medium">Real-time Rendering</span>
+                  <span className="font-medium">Full Locomotion</span>
                 </div>
                 <div className="flex items-center space-x-3 text-blue-400">
                   <div className="p-2 bg-blue-600/20 rounded-xl">
