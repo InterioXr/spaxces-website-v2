@@ -220,7 +220,7 @@ const Index = () => {
               </div>
               <div className="relative z-10">
                 <h3 className="text-xl font-medium text-white mb-3">Scan Your Space</h3>
-                <p className="text-slate-300 leading-relaxed">Use your device's camera to scan and map your room. Our AI will create a 3D model of your space for accurate furniture placement.</p>
+                <p className="text-slate-300 leading-relaxed">Our app may use your device's camera to scan and map your room. You would then be able to place and see objects within your environment</p>
               </div>
             </div>
 
