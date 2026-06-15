@@ -38,7 +38,7 @@ const Index = () => {
       </div>
       
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pl-20 md:pl-6">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
           {/* Logo */}
@@ -78,7 +78,7 @@ const Index = () => {
       </section>
 
       {/* What is Spaxces Section */}
-      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50 pl-20 md:pl-6">
+      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -179,7 +179,7 @@ const Index = () => {
       </section>
 
       {/* Instructions Section */}
-      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
+      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -265,7 +265,7 @@ const Index = () => {
       </section>
 
       {/* Our Projects Section */}
-      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30 pl-20 md:pl-6">
+      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -337,7 +337,7 @@ const Index = () => {
       </section>
 
       {/* Collaborate Section */}
-      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50 pl-20 md:pl-6">
+      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50 pr-20 md:pr-6">
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Collaborate with Us</h2>
@@ -410,7 +410,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30 pl-20 md:pl-6">
+      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">

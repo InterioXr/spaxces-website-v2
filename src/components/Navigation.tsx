@@ -43,7 +43,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-3xl p-3 border border-gray-300/60 dark:border-slate-700/60 shadow-lg">
+    <nav className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-3xl p-3 border border-gray-300/60 dark:border-slate-700/60 shadow-lg">
       <div className="flex flex-col space-y-2">
         {navItems.map(({ id, label, icon: Icon }) => (
           <button
@@ -57,7 +57,7 @@ const Navigation = () => {
             title={label}
           >
             <Icon size={20} />
-            <span className="absolute left-full ml-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
+            <span className="absolute right-full mr-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
               {label}
             </span>
           </button>
