@@ -1,5 +1,6 @@
 import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import FeatureCard from '@/components/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -21,22 +22,19 @@ const Index = () => {
       
       {/* Top Left External Link Buttons */}
       <div className="fixed top-4 left-4 z-50 flex flex-col space-y-2">
-        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           eBb Platforms
           <ExternalLink size={14} />
         </button>
-        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           InterioXr Labs
           <ExternalLink size={14} />
         </button>
       </div>
 
-      {/* Top Right Launch Button */}
+      {/* Top Right Theme Toggle */}
       <div className="fixed top-4 right-4 z-50">
-        <button className="bg-blue-600/90 hover:bg-blue-700/90 text-white px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-blue-500/60 hover:border-blue-400/70 inline-flex items-center gap-2 shadow-lg hover:shadow-blue-500/25">
-          Launch Spaxces WebApp
-          <ExternalLink size={16} />
-        </button>
+        <ThemeToggle />
       </div>
       
       {/* Home Section */}
