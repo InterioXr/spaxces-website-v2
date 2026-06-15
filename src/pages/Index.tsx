@@ -32,12 +32,9 @@ const Index = () => {
         </button>
       </div>
 
-      {/* Top Right Launch Button */}
+      {/* Top Right Theme Toggle */}
       <div className="fixed top-4 right-4 z-50">
-        <button className="bg-blue-600/90 hover:bg-blue-700/90 text-white px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-blue-500/60 hover:border-blue-400/70 inline-flex items-center gap-2 shadow-lg hover:shadow-blue-500/25">
-          Launch Spaxces WebApp
-          <ExternalLink size={16} />
-        </button>
+        <ThemeToggle />
       </div>
       
       {/* Home Section */}
