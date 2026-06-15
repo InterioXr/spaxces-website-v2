@@ -1,5 +1,6 @@
 import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import FeatureCard from '@/components/FeatureCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
