@@ -43,7 +43,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 bg-slate-800/90 backdrop-blur-md rounded-3xl p-3 border border-slate-700/60 shadow-lg">
+    <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-3xl p-3 border border-gray-300/60 dark:border-slate-700/60 shadow-lg">
       <div className="flex flex-col space-y-2">
         {navItems.map(({ id, label, icon: Icon }) => (
           <button
@@ -52,12 +52,12 @@ const Navigation = () => {
             className={`group relative flex items-center justify-center p-3 rounded-2xl transition-all duration-200 ${
               activeSection === id
                 ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
-                : 'text-slate-400 hover:text-blue-400 hover:bg-slate-700/50'
+                : 'text-gray-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-200/50 dark:hover:bg-slate-700/50'
             }`}
             title={label}
           >
             <Icon size={20} />
-            <span className="absolute left-full ml-3 px-2 py-1 bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
+            <span className="absolute left-full ml-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
               {label}
             </span>
           </button>
