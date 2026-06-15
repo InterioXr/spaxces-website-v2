@@ -22,11 +22,11 @@ const Index = () => {
       
       {/* Top Left External Link Buttons */}
       <div className="fixed top-4 left-4 z-50 flex flex-col space-y-2">
-        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           eBb Platforms
           <ExternalLink size={14} />
         </button>
-        <button className="bg-slate-800/90 hover:bg-slate-700/90 text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-slate-700/60 hover:border-blue-500/50 inline-flex items-center gap-2">
+        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           InterioXr Labs
           <ExternalLink size={14} />
         </button>
