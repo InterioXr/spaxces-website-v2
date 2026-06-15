@@ -57,7 +57,7 @@ const Navigation = () => {
             title={label}
           >
             <Icon size={20} />
-            <span className="absolute left-full ml-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
+            <span className="absolute right-full mr-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
               {label}
             </span>
           </button>
