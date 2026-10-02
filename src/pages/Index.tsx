@@ -387,7 +387,7 @@ const Index = () => {
               WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
             }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
-                <Users2 className="text-blue-400" size={32} />
+                <Palette className="text-blue-400" size={32} />
               </div>
               <h3 className="text-lg font-medium text-white mb-3 relative z-10">Interior &amp; Spatial Designers</h3>
               <p className="text-slate-300 text-sm leading-relaxed relative z-10">Design and present spaces at true scale in AR, VR and MR</p>
@@ -395,12 +395,12 @@ const Index = () => {
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
-              backgroundImage: `url(${realEstateAgent})`,
+              backgroundImage: `url(${globalNetwork})`,
               maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
               WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
             }} />
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
-                <Palette className="text-blue-400" size={32} />
+                <Users2 className="text-blue-400" size={32} />
               </div>
               <h3 className="text-lg font-medium text-white mb-3 relative z-10">Architects &amp; Developers</h3>
               <p className="text-slate-300 text-sm leading-relaxed relative z-10">Walk clients through projects before anything is built</p>
@@ -408,7 +408,7 @@ const Index = () => {
             <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
-              backgroundImage: `url(${globalNetwork})`,
+              backgroundImage: `url(${realEstateAgent})`,
               maskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)',
               WebkitMaskImage: 'radial-gradient(circle at top right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 75%)'
             }} />
@@ -448,7 +448,7 @@ const Index = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-medium text-white mb-6">Get in Touch</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your real estate experience? Let's connect and explore the possibilities.
+              Ready to see your space in a new dimension? Let's talk.
             </p>
           </div>
 
@@ -496,7 +496,7 @@ const Index = () => {
       <footer className="py-8 bg-slate-900/80 border-t border-slate-700/60">
         <div className="container mx-auto px-6 text-center">
           <p className="text-slate-400">
-            © 2022–2026 Spaxces - Product of InterioXr Labs. Transforming real estate through mixed reality technology.
+            © 2022–2026 Spaxces - Product of InterioXr Labs. Regenerating scattered realities with AI and Mixed Reality.
           </p>
           <p className="text-slate-400 mt-2 flex items-center justify-center gap-2">
             <Mail size={16} />
