@@ -3,6 +3,7 @@ import Navigation from '@/components/Navigation';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import FeatureCard from '@/components/FeatureCard';
 import ContactForm from '@/components/ContactForm';
+import DecorIdeas from '@/components/DecorIdeas';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Import background images
@@ -293,6 +294,20 @@ const Index = () => {
               <ArrowRight size={20} />
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* AI Decor Ideas Section */}
+      <section id="decor-ideas" className="min-h-screen py-20 relative bg-slate-900/30 pr-20 md:pr-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-5xl font-medium text-white mb-6">AI Decor Ideas</h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Upload a photo of your room and get AI-powered decor ideas tailored to your space.
+            </p>
+          </div>
+          <DecorIdeas />
         </div>
       </section>
 
