@@ -22,14 +22,14 @@ const Index = () => {
       
       {/* Top Left External Link Buttons */}
       <div className="fixed top-4 left-4 z-50 flex flex-col space-y-2">
-        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
+        <a href="https://platforms.ebuildbazaar.in" target="_blank" rel="noopener" className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           eBb Platforms
           <ExternalLink size={14} />
-        </button>
-        <button className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
+        </a>
+        <a href="https://www.interioxr.com" target="_blank" rel="noopener" className="bg-white/90 dark:bg-slate-800/90 hover:bg-gray-100/90 dark:hover:bg-slate-700/90 text-gray-900 dark:text-white px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 backdrop-blur-sm border border-gray-300/60 dark:border-slate-700/60 hover:border-blue-400 dark:hover:border-blue-500/50 inline-flex items-center gap-2">
           InterioXr Labs
           <ExternalLink size={14} />
-        </button>
+        </a>
       </div>
 
       {/* Top Right Theme Toggle */}
@@ -54,14 +54,14 @@ const Index = () => {
           <p className="text-blue-300 mb-2 text-lg font-medium">
             Early Access - awaiting full launch soon.
           </p>
-          <p className="text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
+          <a href="https://bit.ly/InterioXrNotion" target="_blank" rel="noopener" className="text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
             Read about us here
             <ExternalLink size={16} />
-          </p>
+          </a>
           
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+          <h1 className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             Regenerating Scattered Realities
-          </p>
+          </h1>
           <p className="text-lg text-slate-300 mb-6 max-w-2xl mx-auto font-normal">
             Experience the future of Home Design exploration through immersive virtual tours, 
             innovative home decor solutions, and cutting-edge eCommerce platforms.
@@ -428,7 +428,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
-                  <p className="text-slate-300">spaxces@interioxr.com</p>
+                  <a href="mailto:spaxces@interioxr.com" className="text-slate-300 block">spaxces@interioxr.com</a>
                 </div>
               </div>
               
@@ -438,7 +438,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">WhatsApp</h3>
-                  <p className="text-slate-300">+91 8826144224</p>
+                  <a href="https://wa.me/918826144224" target="_blank" rel="noopener" className="text-slate-300 block">+91 8826144224</a>
                 </div>
               </div>
               
@@ -477,11 +477,11 @@ const Index = () => {
       <footer className="py-8 bg-slate-900/80 border-t border-slate-700/60">
         <div className="container mx-auto px-6 text-center">
           <p className="text-slate-400">
-            © 2022-2025 Spaxces - Product of InterioXr Labs. Transforming real estate through mixed reality technology.
+            © 2022–2026 Spaxces - Product of InterioXr Labs. Transforming real estate through mixed reality technology.
           </p>
           <p className="text-slate-400 mt-2 flex items-center justify-center gap-2">
             <Mail size={16} />
-            info@interioxr.com
+            <a href="mailto:info@interioxr.com">info@interioxr.com</a>
           </p>
         </div>
       </footer>
