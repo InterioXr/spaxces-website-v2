@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Home, Building2, Users, Mail, FolderOpen, BookOpen } from 'lucide-react';
+import { Home, Building2, Users, Mail, FolderOpen, BookOpen, Sparkles } from 'lucide-react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -9,6 +9,7 @@ const Navigation = () => {
     { id: 'home', label: 'Home', icon: Home },
     { id: 'spaxces', label: 'Spaxces', icon: Building2 },
     { id: 'instructions', label: 'Instructions', icon: BookOpen },
+    { id: 'decor-ideas', label: 'AI Decor Ideas', icon: Sparkles },
     { id: 'projects', label: 'Our Projects', icon: FolderOpen },
     { id: 'collaborate', label: 'Collaborate', icon: Users },
     { id: 'contact', label: 'Contact', icon: Mail },

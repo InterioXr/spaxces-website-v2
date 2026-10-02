@@ -3,3 +3,6 @@ project_id = "pdwdhdwpymjsbsvddszm"
 [functions]
   [functions.auth-email-hook]
     verify_jwt = false
+
+[functions.decor-ideas]
+verify_jwt = false
