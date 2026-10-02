@@ -2,6 +2,7 @@ import { Eye, Palette, ShoppingCart, Zap, Globe, Users2, Mail, MapPin, Phone, Ar
 import Navigation from '@/components/Navigation';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import FeatureCard from '@/components/FeatureCard';
+import ContactForm from '@/components/ContactForm';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Import background images
@@ -454,20 +455,7 @@ const Index = () => {
             </div>
 
             <div className="bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/60 shadow-lg">
-              <form className="space-y-6">
-                <div>
-                  <input type="text" placeholder="Your Name" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Your Email" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200" />
-                </div>
-                <div>
-                  <textarea rows={4} placeholder="Your Message" className="w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200 resize-none" />
-                </div>
-                <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-2xl font-medium transition-all duration-200 transform hover:scale-[1.02] shadow-lg hover:shadow-blue-500/25">
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
