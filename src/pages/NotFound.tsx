@@ -9,6 +9,16 @@ const NotFound = () => {
       "404 Error: User attempted to access non-existent route:",
       location.pathname
     );
+    const prevTitle = document.title;
+    document.title = "Page not found — Spaxces";
+    const robots = document.createElement("meta");
+    robots.name = "robots";
+    robots.content = "noindex";
+    document.head.appendChild(robots);
+    return () => {
+      document.title = prevTitle;
+      robots.remove();
+    };
   }, [location.pathname]);
 
   return (

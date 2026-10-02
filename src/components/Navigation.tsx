@@ -55,6 +55,7 @@ const Navigation = () => {
                 : 'text-gray-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-200/50 dark:hover:bg-slate-700/50'
             }`}
             title={label}
+            aria-label={label}
           >
             <Icon size={20} />
             <span className="absolute right-full mr-3 px-2 py-1 bg-gray-900/90 dark:bg-slate-900/90 text-white text-sm rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap backdrop-blur-sm">
