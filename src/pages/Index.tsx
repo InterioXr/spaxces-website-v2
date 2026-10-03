@@ -50,9 +50,16 @@ const Index = () => {
         <ThemeToggle />
       </div>
       
-      {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black pr-20 md:pr-6">
+      {/* Site-wide ambient background (same as hero) */}
+      <div aria-hidden="true" className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-500/5 to-blue-700/10" />
+        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000" />
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-600/15 rounded-full blur-lg animate-pulse delay-500" />
+      </div>
+
+      {/* Home Section */}
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pr-20 md:pr-6">
         <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
           {/* Logo */}
           <div className="relative mb-8 flex justify-center">
@@ -86,10 +93,6 @@ const Index = () => {
           </button>
         </div>
         
-        {/* Material 3 floating elements */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000" />
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-blue-600/15 rounded-full blur-lg animate-pulse delay-500" />
       </section>
 
       {/* What is Spaxces Section */}
