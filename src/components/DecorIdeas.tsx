@@ -35,7 +35,7 @@ function renderInline(text: string) {
       return (
         <span key={i} className="inline-flex items-center gap-2 align-middle">
           <span className="inline-block w-5 h-5 rounded-md border border-border" style={{ backgroundColor: hex }} />
-          <code className="text-blue-300 text-sm">{hex}</code>
+          <code className="text-blue-700 dark:text-blue-300 text-sm">{hex}</code>
         </span>
       );
     }

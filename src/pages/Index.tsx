@@ -71,15 +71,15 @@ const Index = () => {
             </div>
           </div>
           
-          <p className="text-blue-300 mb-2 text-lg font-medium">
+          <p className="text-blue-700 dark:text-blue-300 mb-2 text-lg font-medium">
             Early Access - awaiting full launch soon.
           </p>
-          <a href="https://bit.ly/InterioXrNotion" target="_blank" rel="noopener" className="text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
+          <a href="https://bit.ly/InterioXrNotion" target="_blank" rel="noopener" className="text-blue-700 dark:text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-900 dark:hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
             Read about us here
             <ExternalLink size={16} />
           </a>
           
-          <h1 className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+          <h1 className="text-xl md:text-2xl text-blue-800 dark:text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             Regenerating Scattered Realities
           </h1>
           <p className="text-2xl md:text-3xl text-foreground mb-6 max-w-3xl mx-auto font-medium leading-snug">
@@ -343,7 +343,7 @@ const Index = () => {
                       <p className="text-muted-foreground leading-relaxed text-sm mb-4">{p.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {p.tags.map((t) => (
-                          <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30">{t}</span>
+                          <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-700 dark:text-blue-300 border border-blue-500/30">{t}</span>
                         ))}
                       </div>
                       <span className="text-blue-400 text-sm font-medium">{p.status}</span>
