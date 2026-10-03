@@ -18,6 +18,17 @@ import realEstateAgent from '@/assets/real-estate-agent.jpg';
 import interiorDesignWorkspace from '@/assets/interior-design-workspace.jpg';
 import techIntegration from '@/assets/tech-integration.jpg';
 import globalNetwork from '@/assets/global-network.jpg';
+import project1 from '@/assets/project-1.jpg';
+import project2 from '@/assets/project-2.jpg';
+import project3 from '@/assets/project-3.jpg';
+import DemoShowcase from '@/components/DemoShowcase';
+
+const PROJECTS = [
+  { title: 'Project One', description: 'Placeholder description — an immersive mixed reality living space.', image: project1, alt: 'Render of a modern living room at dusk with floating mixed reality panels', tags: ['Unreal Engine', 'MR'], status: 'In Development' },
+  { title: 'Project Two', description: 'Placeholder description — AI-generated 3D furniture ready for AR.', image: project2, alt: 'AI-generated 3D armchair, lamp and side table shown half as wireframe, half photoreal', tags: ['AI-generated', '3D Assets'], status: 'In Development' },
+  { title: 'Project Three', description: 'Placeholder description — real-time visualisation of an open-plan apartment.', image: project3, alt: 'Real-time render of an open-plan apartment kitchen and dining area at night', tags: ['Unity', 'VR'], status: 'In Development' },
+];
+
 const Index = () => {
   return <div className="min-h-screen bg-black text-white">
       <Navigation />
@@ -199,13 +210,8 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 rounded-3xl p-8 border border-slate-700/60 backdrop-blur-sm">
-              <div className="h-64 bg-gradient-to-br from-blue-600/20 to-blue-800/20 rounded-2xl flex items-center justify-center">
-                <div className="text-center text-slate-300">
-                  <Eye size={48} className="mx-auto mb-4 text-blue-400 animate-pulse" />
-                  <p className="text-lg font-medium">Interactive Demo</p>
-                </div>
-              </div>
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 rounded-3xl p-6 md:p-8 border border-slate-700/60 backdrop-blur-sm">
+              <DemoShowcase />
             </div>
           </div>
         </div>
@@ -324,58 +330,24 @@ const Index = () => {
 
           <Carousel className="w-full max-w-6xl mx-auto">
             <CarouselContent className="-ml-6">
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Eye size={48} className="text-blue-400" />
+              {PROJECTS.map((p) => (
+                <CarouselItem key={p.title} className="pl-6 md:basis-1/2 lg:basis-1/3">
+                  <div className="group relative p-6 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="relative z-10">
+                      <img src={p.image} alt={p.alt} loading="lazy" width={1280} height={768} className="w-full h-40 object-cover rounded-2xl mb-6" />
+                      <h3 className="text-xl font-medium text-white mb-3">{p.title}</h3>
+                      <p className="text-slate-300 leading-relaxed text-sm mb-4">{p.description}</p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {p.tags.map((t) => (
+                          <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30">{t}</span>
+                        ))}
+                      </div>
+                      <span className="text-blue-400 text-sm font-medium">{p.status}</span>
                     </div>
-                    <h3 className="text-xl font-medium text-white mb-4">VirtualSpace Living</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Interactive 3D home tours with real-time furniture placement and lighting adjustments.</p>
-                    <span className="text-blue-400 text-sm font-medium">Completed • 2024</span>
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Palette size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">AR Design Studio</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Augmented reality app for visualizing home decor changes before purchase.</p>
-                    <span className="text-blue-400 text-sm font-medium">In Progress • 2024</span>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <ShoppingCart size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">MR Marketplace</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Mixed reality eCommerce platform for immersive home design shopping.</p>
-                    <span className="text-blue-400 text-sm font-medium">Completed • 2023</span>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-6 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative z-10">
-                    <div className="h-40 bg-gradient-to-br from-blue-600/30 to-blue-800/30 rounded-2xl mb-6 flex items-center justify-center">
-                      <Globe size={48} className="text-blue-400" />
-                    </div>
-                    <h3 className="text-xl font-medium text-white mb-4">Global Connect</h3>
-                    <p className="text-slate-300 leading-relaxed text-sm mb-4">Cross-platform collaboration tools for international design teams.</p>
-                    <span className="text-blue-400 text-sm font-medium">Planning • 2024</span>
-                  </div>
-                </div>
-              </CarouselItem>
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
             <CarouselNext className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
