@@ -30,7 +30,7 @@ const PROJECTS = [
 ];
 
 const Index = () => {
-  return <div className="min-h-screen bg-black text-white">
+  return <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       
       {/* Top Left External Link Buttons */}
@@ -71,21 +71,21 @@ const Index = () => {
             </div>
           </div>
           
-          <p className="text-blue-300 mb-2 text-lg font-medium">
+          <p className="text-blue-700 dark:text-blue-300 mb-2 text-lg font-medium">
             Early Access - awaiting full launch soon.
           </p>
-          <a href="https://bit.ly/InterioXrNotion" target="_blank" rel="noopener" className="text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
+          <a href="https://bit.ly/InterioXrNotion" target="_blank" rel="noopener" className="text-blue-700 dark:text-blue-200 mb-8 text-base underline cursor-pointer hover:text-blue-900 dark:hover:text-blue-100 transition-colors duration-200 inline-flex items-center gap-2">
             Read about us here
             <ExternalLink size={16} />
           </a>
           
-          <h1 className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+          <h1 className="text-xl md:text-2xl text-blue-800 dark:text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
             Regenerating Scattered Realities
           </h1>
-          <p className="text-2xl md:text-3xl text-white mb-6 max-w-3xl mx-auto font-medium leading-snug">
+          <p className="text-2xl md:text-3xl text-foreground mb-6 max-w-3xl mx-auto font-medium leading-snug">
             AI-generated 3D objects and spaces, experienced in Augmented, Virtual and Mixed Reality.
           </p>
-          <p className="text-lg text-slate-300 mb-6 max-w-2xl mx-auto font-normal">
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto font-normal">
             From a single idea to an immersive space — designed with AI, built in Unity &amp; Unreal Engine, and explored in MR.
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 elevation-2">
@@ -96,12 +96,12 @@ const Index = () => {
       </section>
 
       {/* What is Spaxces Section */}
-      <section id="spaxces" className="min-h-screen py-20 relative bg-slate-800/50 pr-20 md:pr-6">
+      <section id="spaxces" className="min-h-screen py-20 relative bg-card/50 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">What is Spaxces?</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+            <h2 className="text-5xl font-medium text-foreground mb-6">What is Spaxces?</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               Spaxces is a Mixed Reality platform by InterioXr Labs that uses AI to generate 3D objects and environments, then places them in the real world (AR), a fully virtual one (VR), or a blend of both (MR).
             </p>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 elevation-2">
@@ -110,7 +110,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+            <div className="group relative p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-border hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${vrHomeTour})`,
@@ -122,12 +122,12 @@ const Index = () => {
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
                   <Eye size={28} />
                 </div>
-                <h3 className="text-xl font-medium text-white mb-4">AI → 3D Generation</h3>
-                <p className="text-slate-300 leading-relaxed">Turn prompts, sketches or reference images into ready-to-place 3D objects in minutes.</p>
+                <h3 className="text-xl font-medium text-foreground mb-4">AI → 3D Generation</h3>
+                <p className="text-muted-foreground leading-relaxed">Turn prompts, sketches or reference images into ready-to-place 3D objects in minutes.</p>
               </div>
             </div>
             
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+            <div className="group relative p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-border hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${vanityLamp})`,
@@ -139,12 +139,12 @@ const Index = () => {
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
                   <Palette size={28} />
                 </div>
-                <h3 className="text-xl font-medium text-white mb-4">Interior &amp; Spatial Design</h3>
-                <p className="text-slate-300 leading-relaxed">Design rooms and spaces at true scale, then walk through them before anything is built.</p>
+                <h3 className="text-xl font-medium text-foreground mb-4">Interior &amp; Spatial Design</h3>
+                <p className="text-muted-foreground leading-relaxed">Design rooms and spaces at true scale, then walk through them before anything is built.</p>
               </div>
             </div>
             
-            <div className="group relative p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
+            <div className="group relative p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-border hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${ecommerceTablet})`,
@@ -156,14 +156,14 @@ const Index = () => {
                 <div className="inline-flex p-4 rounded-2xl bg-blue-600/20 text-blue-400 mb-6 group-hover:bg-blue-600/30 transition-colors duration-200">
                   <ShoppingCart size={28} />
                 </div>
-                <h3 className="text-xl font-medium text-white mb-4">Real-Time Engines</h3>
-                <p className="text-slate-300 leading-relaxed">Photorealistic environments rendered in Unity and Unreal Engine, viewable on headsets, phones and the web.</p>
+                <h3 className="text-xl font-medium text-foreground mb-4">Real-Time Engines</h3>
+                <p className="text-muted-foreground leading-relaxed">Photorealistic environments rendered in Unity and Unreal Engine, viewable on headsets, phones and the web.</p>
               </div>
             </div>
           </div>
 
           <div className="text-center mb-10">
-            <h3 className="text-3xl font-medium text-white">How it works</h3>
+            <h3 className="text-3xl font-medium text-foreground">How it works</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {[
@@ -172,18 +172,18 @@ const Index = () => {
               ["Built in Unity / Unreal", "Assets are placed into a real-time, true-to-scale environment."],
               ["Experience in AR / VR / MR", "Walk through it on a headset, phone or browser."],
             ].map(([title, text], i) => (
-              <div key={title} className="p-6 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300">
+              <div key={title} className="p-6 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border hover:border-blue-500/50 transition-all duration-300">
                 <div className="w-10 h-10 mb-4 rounded-full bg-blue-600 text-white flex items-center justify-center font-medium">{i + 1}</div>
-                <h3 className="text-lg font-medium text-white mb-2">{title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">{text}</p>
+                <h3 className="text-lg font-medium text-foreground mb-2">{title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{text}</p>
               </div>
             ))}
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h3 className="text-3xl font-medium text-white">Powered by AI, Unity &amp; Unreal</h3>
-              <p className="text-slate-300 text-lg leading-relaxed">
+              <h3 className="text-3xl font-medium text-foreground">Powered by AI, Unity &amp; Unreal</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed">
                 We combine generative AI with real-time game engines to build spaces you can step into — with full locomotion, panning and zooming, true-to-scale objects and realistic lighting.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -213,7 +213,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 rounded-3xl p-6 md:p-8 border border-slate-700/60 backdrop-blur-sm">
+            <div className="bg-gradient-to-br from-card/60 to-muted/60 rounded-3xl p-6 md:p-8 border border-border backdrop-blur-sm">
               <DemoShowcase />
             </div>
           </div>
@@ -221,18 +221,18 @@ const Index = () => {
       </section>
 
       {/* Instructions Section */}
-      <section id="instructions" className="min-h-screen py-20 relative bg-slate-800/30 pr-20 md:pr-6">
+      <section id="instructions" className="min-h-screen py-20 relative bg-card/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">How to Use Spaxces</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-medium text-foreground mb-6">How to Use Spaxces</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Follow these simple steps to design and explore spaces with AI and Mixed Reality.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${appLaunch})`,
@@ -243,12 +243,12 @@ const Index = () => {
                 1
               </div>
               <div className="relative z-10">
-                <h3 className="text-xl font-medium text-white mb-3">Launch & Setup</h3>
-                <p className="text-slate-300 leading-relaxed">Launch the Spaxces app and create your account. Ensure your device supports mixed reality features for the best experience.</p>
+                <h3 className="text-xl font-medium text-foreground mb-3">Launch & Setup</h3>
+                <p className="text-muted-foreground leading-relaxed">Launch the Spaxces app and create your account. Ensure your device supports mixed reality features for the best experience.</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${roomScan})`,
@@ -259,12 +259,12 @@ const Index = () => {
                 2
               </div>
               <div className="relative z-10">
-                <h3 className="text-xl font-medium text-white mb-3">Scan Your Space</h3>
-                <p className="text-slate-300 leading-relaxed">Our app may use your device's camera to scan and map your room. You would then be able to place and see objects within your environment</p>
+                <h3 className="text-xl font-medium text-foreground mb-3">Scan Your Space</h3>
+                <p className="text-muted-foreground leading-relaxed">Our app may use your device's camera to scan and map your room. You would then be able to place and see objects within your environment</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${arNavigation})`,
@@ -275,12 +275,12 @@ const Index = () => {
                 3
               </div>
               <div className="relative z-10">
-                <h3 className="text-xl font-medium text-white mb-3">Explore & Navigate</h3>
-                <p className="text-slate-300 leading-relaxed">Explore our catalog of furniture and decor items. Navigate through virtual spaces to see how they look and fit.</p>
+                <h3 className="text-xl font-medium text-foreground mb-3">Explore & Navigate</h3>
+                <p className="text-muted-foreground leading-relaxed">Explore our catalog of furniture and decor items. Navigate through virtual spaces to see how they look and fit.</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 overflow-hidden relative">
+            <div className="flex items-start space-x-6 p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-44 h-44 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${purchaseDelivery})`,
@@ -291,8 +291,8 @@ const Index = () => {
                 4
               </div>
               <div className="relative z-10">
-                <h3 className="text-xl font-medium text-white mb-3">Refine &amp; Realise</h3>
-                <p className="text-slate-300 leading-relaxed">Adjust materials, layouts and lighting, then take your design into the real world — with our partners or your own team.</p>
+                <h3 className="text-xl font-medium text-foreground mb-3">Refine &amp; Realise</h3>
+                <p className="text-muted-foreground leading-relaxed">Adjust materials, layouts and lighting, then take your design into the real world — with our partners or your own team.</p>
               </div>
             </div>
           </div>
@@ -307,12 +307,12 @@ const Index = () => {
       </section>
 
       {/* AI Decor Ideas Section */}
-      <section id="decor-ideas" className="min-h-screen py-20 relative bg-slate-900/30 pr-20 md:pr-6">
+      <section id="decor-ideas" className="min-h-screen py-20 relative bg-card/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">AI Decor Ideas</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-medium text-foreground mb-6">AI Decor Ideas</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Upload a photo of your room and get AI-powered decor ideas tailored to your space.
             </p>
           </div>
@@ -321,12 +321,12 @@ const Index = () => {
       </section>
 
       {/* Our Projects Section */}
-      <section id="projects" className="min-h-screen py-20 relative bg-slate-900/30 pr-20 md:pr-6">
+      <section id="projects" className="min-h-screen py-20 relative bg-card/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">Our Projects</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-medium text-foreground mb-6">Our Projects</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Explore our innovative mixed reality projects that are reshaping interior and spatial design.
             </p>
           </div>
@@ -335,15 +335,15 @@ const Index = () => {
             <CarouselContent className="-ml-6">
               {PROJECTS.map((p) => (
                 <CarouselItem key={p.title} className="pl-6 md:basis-1/2 lg:basis-1/3">
-                  <div className="group relative p-6 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-slate-700/60 hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
+                  <div className="group relative p-6 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl border border-border hover:border-blue-500/50 transition-all duration-300 hover:scale-[1.02] h-full">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-800/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="relative z-10">
                       <img src={p.image} alt={p.alt} loading="lazy" width={1280} height={768} className="w-full h-40 object-cover rounded-2xl mb-6" />
-                      <h3 className="text-xl font-medium text-white mb-3">{p.title}</h3>
-                      <p className="text-slate-300 leading-relaxed text-sm mb-4">{p.description}</p>
+                      <h3 className="text-xl font-medium text-foreground mb-3">{p.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed text-sm mb-4">{p.description}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {p.tags.map((t) => (
-                          <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30">{t}</span>
+                          <span key={t} className="text-xs px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-700 dark:text-blue-300 border border-blue-500/30">{t}</span>
                         ))}
                       </div>
                       <span className="text-blue-400 text-sm font-medium">{p.status}</span>
@@ -352,24 +352,24 @@ const Index = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
-            <CarouselNext className="bg-slate-800/80 border-slate-700/60 text-blue-400 hover:bg-slate-700/80" />
+            <CarouselPrevious className="bg-card/80 border-border text-blue-400 hover:bg-muted/80" />
+            <CarouselNext className="bg-card/80 border-border text-blue-400 hover:bg-muted/80" />
           </Carousel>
         </div>
       </section>
 
       {/* Collaborate Section */}
-      <section id="collaborate" className="min-h-screen py-20 relative bg-slate-900/50 pr-20 md:pr-6">
+      <section id="collaborate" className="min-h-screen py-20 relative bg-card/50 pr-20 md:pr-6">
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">Collaborate with Us</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-medium text-foreground mb-6">Collaborate with Us</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Join our ecosystem of interior and spatial designers, architects, developers and XR innovators.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+            <div className="text-center p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${interiorDesignWorkspace})`,
@@ -379,10 +379,10 @@ const Index = () => {
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Palette className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Interior &amp; Spatial Designers</h3>
-              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Design and present spaces at true scale in AR, VR and MR</p>
+              <h3 className="text-lg font-medium text-foreground mb-3 relative z-10">Interior &amp; Spatial Designers</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed relative z-10">Design and present spaces at true scale in AR, VR and MR</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+            <div className="text-center p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${globalNetwork})`,
@@ -392,10 +392,10 @@ const Index = () => {
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Users2 className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Architects &amp; Developers</h3>
-              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Walk clients through projects before anything is built</p>
+              <h3 className="text-lg font-medium text-foreground mb-3 relative z-10">Architects &amp; Developers</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed relative z-10">Walk clients through projects before anything is built</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+            <div className="text-center p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${realEstateAgent})`,
@@ -405,10 +405,10 @@ const Index = () => {
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Zap className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Real Estate Partners</h3>
-              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Bring properties to life with immersive spatial experiences</p>
+              <h3 className="text-lg font-medium text-foreground mb-3 relative z-10">Real Estate Partners</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed relative z-10">Bring properties to life with immersive spatial experiences</p>
             </div>
-            <div className="text-center p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
+            <div className="text-center p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 overflow-hidden relative">
               {/* Background image with fade effect */}
               <div className="absolute top-0 right-0 w-36 h-36 opacity-40 bg-cover bg-center" style={{
               backgroundImage: `url(${techIntegration})`,
@@ -418,8 +418,8 @@ const Index = () => {
               <div className="inline-flex p-4 bg-blue-600/20 rounded-2xl mb-6 relative z-10">
                 <Globe className="text-blue-400" size={32} />
               </div>
-              <h3 className="text-lg font-medium text-white mb-3 relative z-10">Tech &amp; XR Partners</h3>
-              <p className="text-slate-300 text-sm leading-relaxed relative z-10">Build with us on AI, Unity and Unreal pipelines</p>
+              <h3 className="text-lg font-medium text-foreground mb-3 relative z-10">Tech &amp; XR Partners</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed relative z-10">Build with us on AI, Unity and Unreal pipelines</p>
             </div>
           </div>
 
@@ -432,12 +432,12 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen py-20 relative bg-slate-800/30 pr-20 md:pr-6">
+      <section id="contact" className="min-h-screen py-20 relative bg-card/30 pr-20 md:pr-6">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-medium text-white mb-6">Get in Touch</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-5xl font-medium text-foreground mb-6">Get in Touch</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Ready to see your space in a new dimension? Let's talk.
             </p>
           </div>
@@ -449,8 +449,8 @@ const Index = () => {
                   <Mail className="text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-white">Email</h3>
-                  <a href="mailto:spaxces@interioxr.com" className="text-slate-300 block">spaxces@interioxr.com</a>
+                  <h3 className="text-lg font-medium text-foreground">Email</h3>
+                  <a href="mailto:spaxces@interioxr.com" className="text-muted-foreground block">spaxces@interioxr.com</a>
                 </div>
               </div>
               
@@ -459,8 +459,8 @@ const Index = () => {
                   <Phone className="text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-white">WhatsApp</h3>
-                  <a href="https://wa.me/918826144224" target="_blank" rel="noopener" className="text-slate-300 block">+91 8826144224</a>
+                  <h3 className="text-lg font-medium text-foreground">WhatsApp</h3>
+                  <a href="https://wa.me/918826144224" target="_blank" rel="noopener" className="text-muted-foreground block">+91 8826144224</a>
                 </div>
               </div>
               
@@ -469,13 +469,13 @@ const Index = () => {
                   <MapPin className="text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-white">Our Offices</h3>
-                  <p className="text-slate-300">Delhi/NCR, Sydney, London</p>
+                  <h3 className="text-lg font-medium text-foreground">Our Offices</h3>
+                  <p className="text-muted-foreground">Delhi/NCR, Sydney, London</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/60 shadow-lg">
+            <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border shadow-lg">
               <ContactForm />
             </div>
           </div>
@@ -483,12 +483,12 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-slate-900/80 border-t border-slate-700/60">
+      <footer className="py-8 bg-card/80 border-t border-border">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-slate-400">
+          <p className="text-muted-foreground">
             © 2022–2026 Spaxces - Product of InterioXr Labs. Regenerating scattered realities with AI and Mixed Reality.
           </p>
-          <p className="text-slate-400 mt-2 flex items-center justify-center gap-2">
+          <p className="text-muted-foreground mt-2 flex items-center justify-center gap-2">
             <Mail size={16} />
             <a href="mailto:info@interioxr.com">info@interioxr.com</a>
           </p>
