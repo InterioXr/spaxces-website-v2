@@ -11,7 +11,7 @@ const schema = z.object({
 
 type Errors = Partial<Record<'name' | 'email' | 'message', string>>;
 
-const inputClass = "w-full px-4 py-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200";
+const inputClass = "w-full px-4 py-4 bg-card/50 border border-border rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-slate-700/70 transition-all duration-200";
 
 const ContactForm = () => {
   const [values, setValues] = useState({ name: '', email: '', message: '' });

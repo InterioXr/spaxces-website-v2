@@ -29,12 +29,12 @@ async function downscale(file: File): Promise<string> {
 
 function renderInline(text: string) {
   return text.split(/(\*\*[^*]+\*\*|`#[0-9a-fA-F]{6}`)/g).map((part, i) => {
-    if (part.startsWith('**')) return <strong key={i} className="text-white">{part.slice(2, -2)}</strong>;
+    if (part.startsWith('**')) return <strong key={i} className="text-foreground">{part.slice(2, -2)}</strong>;
     if (/^`#[0-9a-fA-F]{6}`$/.test(part)) {
       const hex = part.slice(1, -1);
       return (
         <span key={i} className="inline-flex items-center gap-2 align-middle">
-          <span className="inline-block w-5 h-5 rounded-md border border-slate-600" style={{ backgroundColor: hex }} />
+          <span className="inline-block w-5 h-5 rounded-md border border-border" style={{ backgroundColor: hex }} />
           <code className="text-blue-300 text-sm">{hex}</code>
         </span>
       );
@@ -45,11 +45,11 @@ function renderInline(text: string) {
 
 function Result({ text }: { text: string }) {
   return (
-    <div className="space-y-2 text-slate-300 leading-relaxed">
+    <div className="space-y-2 text-muted-foreground leading-relaxed">
       {text.split('\n').map((line, i) => {
         const t = line.trim();
         if (!t) return null;
-        if (t.startsWith('## ')) return <h3 key={i} className="text-xl font-medium text-white pt-4 first:pt-0">{t.slice(3)}</h3>;
+        if (t.startsWith('## ')) return <h3 key={i} className="text-xl font-medium text-foreground pt-4 first:pt-0">{t.slice(3)}</h3>;
         if (/^[-*] /.test(t)) return <p key={i} className="pl-4">• {renderInline(t.slice(2))}</p>;
         if (/^\d+\. /.test(t)) return <p key={i} className="pl-4">{renderInline(t)}</p>;
         return <p key={i}>{renderInline(t)}</p>;
@@ -114,7 +114,7 @@ export default function DecorIdeas() {
 
   return (
     <div className="grid lg:grid-cols-2 gap-8">
-      <div className="p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 space-y-6">
+      <div className="p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border space-y-6">
         <div
           role="button"
           tabIndex={0}
@@ -124,30 +124,30 @@ export default function DecorIdeas() {
           onDragOver={(e) => { e.preventDefault(); setDragging(true); }}
           onDragLeave={() => setDragging(false)}
           onDrop={(e) => { e.preventDefault(); setDragging(false); handleFile(e.dataTransfer.files[0]); }}
-          className={`cursor-pointer rounded-2xl border-2 border-dashed transition-colors overflow-hidden flex items-center justify-center min-h-56 ${dragging ? 'border-blue-400 bg-blue-600/10' : 'border-slate-600 hover:border-blue-500/60'}`}
+          className={`cursor-pointer rounded-2xl border-2 border-dashed transition-colors overflow-hidden flex items-center justify-center min-h-56 ${dragging ? 'border-blue-400 bg-blue-600/10' : 'border-border hover:border-blue-500/60'}`}
         >
           {image ? (
             <img src={image} alt="Your room" className="w-full max-h-80 object-cover" />
           ) : (
-            <div className="text-center text-slate-300 p-6">
+            <div className="text-center text-muted-foreground p-6">
               <Upload className="mx-auto mb-3 text-blue-400" size={32} />
-              <p className="font-medium text-white">Drop a room photo or tap to choose</p>
-              <p className="text-sm text-slate-400 mt-1">JPG, PNG or WebP, up to 8 MB</p>
+              <p className="font-medium text-foreground">Drop a room photo or tap to choose</p>
+              <p className="text-sm text-muted-foreground mt-1">JPG, PNG or WebP, up to 8 MB</p>
             </div>
           )}
         </div>
         <input ref={inputRef} type="file" accept="image/jpeg,image/png,image/webp" className="hidden" onChange={(e) => handleFile(e.target.files?.[0])} />
-        <p className="text-xs text-slate-400 -mt-3">Your photo is only used to create suggestions and is not stored.</p>
+        <p className="text-xs text-muted-foreground -mt-3">Your photo is only used to create suggestions and is not stored.</p>
 
         <div>
-          <p className="text-sm font-medium text-slate-200 mb-3">Preferred style (optional)</p>
+          <p className="text-sm font-medium text-muted-foreground mb-3">Preferred style (optional)</p>
           <div className="flex flex-wrap gap-2">
             {STYLES.map((s) => (
               <button
                 key={s}
                 type="button"
                 onClick={() => setStyle(style === s ? null : s)}
-                className={`px-4 py-2 rounded-full text-sm border transition-colors ${style === s ? 'bg-blue-600 border-blue-500 text-white' : 'border-slate-600 text-slate-300 hover:border-blue-500/60'}`}
+                className={`px-4 py-2 rounded-full text-sm border transition-colors ${style === s ? 'bg-blue-600 border-blue-500 text-white' : 'border-border text-muted-foreground hover:border-blue-500/60'}`}
               >
                 {s}
               </button>
@@ -160,11 +160,11 @@ export default function DecorIdeas() {
           onChange={(e) => setNote(e.target.value.slice(0, 300))}
           placeholder="Anything else? e.g. small budget, kid-friendly"
           rows={2}
-          className="w-full rounded-2xl bg-slate-900/60 border border-slate-600 text-white placeholder:text-slate-500 p-4 focus:outline-none focus:border-blue-500"
+          className="w-full rounded-2xl bg-card/60 border border-border text-foreground placeholder:text-slate-500 p-4 focus:outline-none focus:border-blue-500"
         />
 
         {loading ? (
-          <button type="button" onClick={() => abortRef.current?.abort()} className="w-full bg-slate-700 hover:bg-slate-600 text-white px-8 py-4 rounded-full text-lg font-medium inline-flex items-center justify-center gap-2 transition-colors">
+          <button type="button" onClick={() => abortRef.current?.abort()} className="w-full bg-muted hover:bg-slate-600 text-foreground px-8 py-4 rounded-full text-lg font-medium inline-flex items-center justify-center gap-2 transition-colors">
             <Square size={18} /> Stop
           </button>
         ) : (
@@ -174,11 +174,11 @@ export default function DecorIdeas() {
         )}
       </div>
 
-      <div className="p-8 rounded-3xl bg-slate-800/80 backdrop-blur-sm shadow-lg border border-slate-700/60 min-h-72" aria-live="polite">
+      <div className="p-8 rounded-3xl bg-card/80 backdrop-blur-sm shadow-lg border border-border min-h-72" aria-live="polite">
         {output ? (
           <Result text={output} />
         ) : (
-          <div className="h-full flex flex-col items-center justify-center text-center text-slate-400 gap-3">
+          <div className="h-full flex flex-col items-center justify-center text-center text-muted-foreground gap-3">
             {loading ? <Sparkles className="text-blue-400 animate-pulse" size={40} /> : <ImageIcon className="text-blue-400" size={40} />}
             <p>{loading ? 'Looking at your room…' : 'Your tailored decor ideas will appear here.'}</p>
           </div>
