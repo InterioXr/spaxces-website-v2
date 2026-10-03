@@ -160,11 +160,11 @@ export default function DecorIdeas() {
           onChange={(e) => setNote(e.target.value.slice(0, 300))}
           placeholder="Anything else? e.g. small budget, kid-friendly"
           rows={2}
-          className="w-full rounded-2xl bg-card/60 border border-border text-foreground placeholder:text-slate-500 p-4 focus:outline-none focus:border-blue-500"
+          className="w-full rounded-2xl bg-card/60 border border-border text-foreground placeholder:text-muted-foreground p-4 focus:outline-none focus:border-blue-500"
         />
 
         {loading ? (
-          <button type="button" onClick={() => abortRef.current?.abort()} className="w-full bg-muted hover:bg-slate-600 text-foreground px-8 py-4 rounded-full text-lg font-medium inline-flex items-center justify-center gap-2 transition-colors">
+          <button type="button" onClick={() => abortRef.current?.abort()} className="w-full bg-muted hover:bg-muted/70 text-foreground px-8 py-4 rounded-full text-lg font-medium inline-flex items-center justify-center gap-2 transition-colors">
             <Square size={18} /> Stop
           </button>
         ) : (
